@@ -2,16 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screen Recorder @047pegasus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" href="./Assets/favicon.svg"/>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <h1>Screen Recorder System --dev by 047pegasus ⚡</h1>
     <video></video>
-    <button class="start-btn" id="startbtn" >Start 🚥</button>
-    <button class="stop-btn" id="stopbtn">Stop ❌</button>
+    <button class="button is-primary" id="startBtn" >Start 🚥</button>
+    <button class="button is-warning" id="stopBtn">Stop ❌</button>
     <br><hr/>
-    <button class="select-btn" id="selectbtn">Select Video 📹</button>
+    <button class="button is-text" id="videoSelectBtn">Select Video 📹</button>
 
   </body>
   <script defer src="./render.js"></script>
