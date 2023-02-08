@@ -2,20 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Screen Recorder @047pegasus</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="icon" href="./Assets/favicon.svg"/>
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
     <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
   </head>
-  <body>
-    <h1>Screen Recorder System --dev by 047pegasus ⚡</h1>
-    <video></video>
-    <button class="button is-primary" id="startBtn" >Start 🚥</button>
-    <button class="button is-warning" id="stopBtn">Stop ❌</button>
-    <br><hr/>
-    <button class="button is-text" id="videoSelectBtn">Select Video 📹</button>
+  <body class="content">
+    <h1>⚡ Electron Screen Recorder </h1>
 
+    <video></video>
+
+    <button id="startBtn" class="button is-primary">Start</button>
+    <button id="stopBtn" class="button is-warning">Stop</button>
+
+    <hr />
+
+    <button id="videoSelectBtn" class="button is-text">
+      Choose a Video Source
+    </button>
   </body>
-  <script defer src="./render.js"></script>
 </html>
